@@ -1,0 +1,38 @@
+
+  
+  #search {
+    background-color: #f9f9f9;
+    border-radius: 50px;
+    width: 70%;
+    border: none;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    /* margin-bottom: 1rem; */
+  }
+  #input{
+    border: none;
+    font-size: large;
+    background-color: #f9f9f9;
+    width: 90%;
+    outline: none;
+    color: #B60071;
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: 0.5rem; 
+  }
+  input::placeholder {
+    color: #999999da; /* Set the color of the placeholder text */
+    font-size: 15px; /* Set the font size of the placeholder text */
+    outline: none;
+    padding-left: 0.3rem;
+  }
+  .Mains {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.8rem;
+  }
+  

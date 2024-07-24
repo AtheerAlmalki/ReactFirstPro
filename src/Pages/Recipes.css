@@ -1,0 +1,139 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    --Orange: #EB5B00;
+    --Wine: #E4003A;
+    --Yallow: #FFB200;
+    --Purpel: #B60071;
+
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #c0d1e1;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+.Box {
+    /* background-color: #f0e8e0e7; */
+    width: 69rem;
+    /* margin-top: 2rem; */
+    display: flex;
+    flex-direction: column;
+    /* padding: 5rem; */
+    /* border-radius: 0.5rem; */
+    justify-content: center;
+    text-align: left;
+    /* margin-left: 1.8rem; */
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 5rem;
+
+}
+
+ .img2 {
+    width: 16rem;
+    height: 16rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    justify-content: center;
+}
+
+.btn2 {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.Name2 {
+    color: #B60071;
+    font-size: 26Px;
+    /* margin-left: 1rem; */
+}
+
+.ingredents2 b {
+    color: #343434;
+    margin-left: 1rem;
+}
+
+.ingredents2 li{
+ color: #595959;
+    font-weight:500;
+}
+
+.Rate2 {
+    background-color: #ffffffe7;
+    border-radius: 0rem 1rem 1rem 0rem;
+    width: 11rem;
+    padding: 1rem;
+    text-align: center;
+    margin-left: 1rem;
+}
+
+.Mini {
+    background-color: #ffffff9e;
+    border-radius: 1rem;
+    padding-bottom:1rem ;
+    display: flex;
+}
+
+.Mini2 {
+    
+    /* margin: 1rem; */
+    /* margin-left: 2rem; */
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+    display: flex;
+    justify-content: center;
+    background-color: #b6007016;
+    height: 5rem;
+    width: 17rem;
+    border-radius: 1rem;
+}
+
+.Details b{
+    display: flex;
+    color: #6e6e6e;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-right: 2rem;
+    align-items: center;
+}
+.btn3{
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+}
+.btnBack{
+    padding: 1rem;
+    background-color: #7bc3bf;
+    color: #ffffff;
+    font-size: larger;
+    font-weight: bold;
+    border: none;
+    width: 30rem;
+    margin-left: 20rem;
+    margin-top: 3rem;
+    border-radius: 1rem;
+  transition: cursor 0.3s ease;
+  transition: background-color 0.3s ease;
+  transition: padding 0.3s ease;
+  
+}
+
+.btnBack:hover{
+background-color: #69a8a5;
+cursor: pointer;
+}
+
+
+.Like{
+    margin-top:1.5rem;
+    margin-left: 1rem;
+}
+.icons {
+    width: 1rem;
+    height: 1rem;
+  }

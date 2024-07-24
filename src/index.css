@@ -1,0 +1,390 @@
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  --Orange: #EB5B00;
+  --Wine: #E4003A;
+  --Yallow: #FFB200;
+  --Purpel: #B60071;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #e7ded3;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+      /* Set the margin and padding of the body to 0 */
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      /* Set the margin and padding of the header to 0 */
+      header {
+        margin: 0;
+        padding: 0;
+        /* Set the height of the header to 100% of the viewport height */
+        height: 100vh;
+        background-color: #f2f2f2;
+      }
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+
+h1 {
+  font-size: 3.5em;
+  line-height: 1.1;
+}
+
+li {
+  color: #FFB200;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+
+}
+
+.btn:hover .ingredents {
+  display: block;
+  padding: 0.5rem;
+}
+
+.Name {
+  color: #343434;
+  padding: 0.8rem;
+  background-color: #81a6c627;
+  border-radius: 7rem;
+}
+
+.Name:hover {
+  cursor: pointer;
+}
+
+.ingredents {
+  display: none;
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  background-color: #ffffff;
+  min-width: 160px;
+  font-size: 12px;
+  border-radius: 1rem;
+  color: #213547;
+  margin-bottom: 1rem;
+}
+
+.btn:hover~.Rate,
+.btn:hover~.LikeButton,
+.btn:hover~.Detailes1,
+.btn:hover~.More
+ {
+  display: none;
+}
+
+@keyframes appear {
+
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.Detailes1{
+  font-size: 13px;
+  color: #343434;
+  font-weight: 200;
+  margin-bottom: 1rem;
+}
+
+.recipe-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding: 20px; */
+  border-bottom: 1px solid #ddd;
+  /* height: 100%; make each recipe-container take up full height */
+  text-align: center;
+  height: 30.8rem;
+  width: 12rem;
+  color: #EB5B00;
+  border-radius: 1rem;
+  margin: 1rem;
+  margin-bottom: 2rem;
+  background-color: #ffffff;
+  font-weight: bold;
+  align-items: center;
+  position: relative;
+  animation: appear 2s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+  
+}
+
+.recipe-container h3 {
+  margin-top: 0;
+}
+
+.back {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: none;
+}
+
+.img {
+  height: 12rem;
+  width: 12rem;
+  border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.Logo {
+  width: 16rem;
+  padding-right: 5rem;
+}
+
+.Main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2ebe3;
+  box-shadow: 0 0 10px #8f7a7a33;
+
+}
+
+.SubMain {
+  display: flex;
+  flex-direction: column;
+  padding-right: 10rem;
+}
+
+.SubMain b {
+  font-size: 3rem;
+  margin-left: 10rem;
+  color: #000000;
+}
+
+.SubMain p {
+  font-size: 1rem;
+  margin-left: 10rem;
+  color: #213547;
+}
+
+b {
+  font-size: large;
+  color: #EB5B00;
+}
+
+.Rate {
+  color: darkgrey;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.not-found p {
+  background-color: #7bc3bf;
+  border-radius: 3rem;
+  font-size: larger;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 55rem;
+  margin-left: 11.5rem;
+
+}
+
+.dropbtn {
+  background: none;
+  color: rgb(208, 38, 38);
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  color: #535bf2;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  transform: translateX(-50%);
+  overflow-y: scroll;
+  height: 10rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  /* Dropdown-specific scrollbar styles */
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #e6e6e68d;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #b60070b6;
+    border-radius: 3rem;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #B60071;
+  }
+}
+
+
+.dropdown-content.show {
+  display: block;
+}
+
+.Type {
+  color: #6b6b6b;
+  padding-right: 7rem;
+  cursor: pointer;
+  padding: 0.3rem;
+}
+
+.Type:hover {
+  color: #B60071;
+  background-color: #21354709;
+  border-radius: 7rem;
+  padding: 0.1rem;
+  cursor: pointer;
+}
+
+.Type2 img {
+  height: 20px;
+  width: 20px;
+}
+
+.ReadMore {
+  background-color: #d90f8c;
+  border-radius: 0rem 0rem 1rem 1rem;
+  border: none;
+  width: 12rem;
+  height: 3rem;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: cursor 0.3s ease;
+  transition: background-color 0.3s ease;
+  transition: padding 0.3s ease;
+  
+ /* padding: 10px 20px; */
+}
+
+.ReadMore:hover {
+  cursor: pointer; 
+  background-color: #B60071;
+  /* padding: 12px 22px; */
+}
+.ReadMore:active {
+  transform: translateY(1px);
+}
+
+/* Custom Scrollbar  */
+::-webkit-scrollbar{
+  width: 13px;
+}
+::-webkit-scrollbar-track{
+  background-color: #e2d9cf;
+  border-radius: 1rem;
+}
+::-webkit-scrollbar-thumb{
+  background: #f2ebe3;
+  border-radius: 1rem;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: #f2ebe3d5;
+  border-radius: 1rem;
+}
+
+.icons {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+.Loading {
+  position: relative;
+  left: 60%;
+  margin-top: 10px;
+}
+
+.bar1, .bar2, .bar3, .bar4 {
+  background-color: white;
+  height: 100px;
+  width: 25px;
+  position: relative;
+  animation: load 1.5s infinite;
+}
+
+@keyframes load {
+  50% {
+    transform: scaleY(1.8);
+  }
+}
+
+.bar1 {
+  background-color: #b8ebe9;
+  top: 130px;
+  right: 180px;
+}
+
+.bar2 {
+  background-color: #7bc3bf;
+  top: 10px;
+  right: 130px;
+  animation-delay: 0.1s;
+}
+
+.bar3 {
+  background-color: #558684;
+  bottom: 70px;
+  right: 80px;
+  animation-delay: 0.3s;
+}
+
+.bar4 {
+  background-color: #31504e;
+  bottom: 190px;
+  right: 30px;
+  animation-delay: 0.6s;
+}
